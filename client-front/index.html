@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--link rel="stylesheet" href="index.css"-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <h1>Client Page</h1>
+    <div id="app">
+      <p>
+        Request: <input v-model="req.message" type="text" placeholder="your message">
+        <br/>
+        Endpoint: <input v-model="req.endpoint" type="text" placeholder="endpoint">
+        <br/>
+        <button type="submit" v-on:click="greet">Send</button>
+      </p>
+      Response: {{ resp.message }}
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
